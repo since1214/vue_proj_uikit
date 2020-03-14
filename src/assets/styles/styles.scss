@@ -1,0 +1,27 @@
+
+@import "~uikit/src/scss/variables.scss";
+@import "~uikit/src/scss/mixins.scss";
+@import "~uikit/src/scss/uikit.scss";
+
+$global-link-color: #a40000;
+$overlay-primary-background: rgba(34, 34, 34, 0.5);
+
+$play-btn-image: url("~@/assets/images/play-btn.png");
+
+@mixin hook-card() {
+  color: #000;
+}
+
+.uk-grid-match{width: 100%;}
+.uk-grid{
+  margin: 0;
+  *{
+    padding-left: 0;
+  }
+}
+@media screen and (min-width:961px){
+  .uk-slideshow{
+    .uk-icon > svg{width: 40px;}
+  }
+}
+
